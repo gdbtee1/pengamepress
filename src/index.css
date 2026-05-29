@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+/* Reset */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #f8f4ee;
+  color: #111111;
+  font-family: "Inter", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* Typography */
+
+h1,
+h2,
+h3,
+h4,
+.font-serif {
+  font-family: "Playfair Display", serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+::selection {
+  background: #b8860b;
+  color: white;
+}
+:root {
+  --cream: #f8f4ee;
+  --gold: #b8860b;
+  --black: #111111;
+  --muted: #6f6a61;
+}
+
+.gold-btn {
+  background: var(--gold);
+  color: white;
+}
+
+.gold-btn:hover {
+  background: var(--black);
+}
+
+.outline-btn {
+  border: 1px solid rgba(184, 134, 11, 0.3);
+  background: white;
+  color: var(--black);
+}
+
+.outline-btn:hover {
+  background: var(--gold);
+  color: white;
+}
